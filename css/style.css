@@ -37,7 +37,8 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 10px 0;
+  font-weight: 600;
 }
 p a,
 li a {
@@ -49,14 +50,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 700;
 }
 a {
-  color: #404040;
+  color: #868e96;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #adb5bd;
 }
 a img:hover,
 a img:focus {
@@ -80,12 +81,12 @@ hr.small {
   z-index: 3;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 700;
 }
 .navbar-custom .nav li a {
   /* text-transform: uppercase; */
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -318,7 +319,10 @@ hr.small {
   height: 30px;
 }
 footer {
-  padding: 50px 0 65px;
+  background: #f1f3f5;
+  border-top: 1px solid #dee2e6;
+  margin-top: 50px;
+  padding: 30px 0;
 }
 footer .list-inline {
   margin: 0;
@@ -382,7 +386,7 @@ form .row:first-child .floating-label-form-group {
 .btn {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
@@ -404,7 +408,7 @@ form .row:first-child .floating-label-form-group {
 .pager li > span {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 15px 25px;
   background-color: #fff;
