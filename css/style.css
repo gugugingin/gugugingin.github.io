@@ -190,10 +190,10 @@ a img:focus {
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.1;
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   margin: 10px 0 0;
 }
 @media only screen and (min-width: 768px) {
@@ -215,9 +215,9 @@ a img:focus {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  font-size: 24px;
+  font-size: 22px;
   margin: 10px 0 30px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .intro-header .post-heading .meta {
   display: absolute;
@@ -252,8 +252,10 @@ a img:focus {
   font-size: 22px;
 }
 .post-preview > a > .post-subtitle {
+  color: #adb5bd;
+  font-size: 20px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
@@ -321,7 +323,7 @@ footer {
   background: #f1f3f5;
   border-top: 1px solid #dee2e6;
   margin-top: 50px;
-  padding: 30px 0;
+  padding: 30px 0 40px;
 }
 footer .list-inline {
   margin: 0;
@@ -331,6 +333,9 @@ footer .copyright {
   font-size: 14px;
   text-align: center;
   margin-bottom: 0;
+}
+footer .text-muted {
+  color: #adb5bd;
 }
 .floating-label-form-group {
   font-size: 14px;
