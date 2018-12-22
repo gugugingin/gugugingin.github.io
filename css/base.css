@@ -10,12 +10,11 @@
   background-size: cover;
   -o-background-size: cover;
 }
-.serif,
-body,
-.intro-header .post-heading .meta {
+.serif {
   font-family: 'Lora', 'Times New Roman', serif;
 }
 .sans-serif,
+body,
 h1,
 h2,
 h3,
@@ -26,6 +25,7 @@ h6,
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading,
 .intro-header .post-heading .subheading,
+.intro-header .post-heading .meta,
 .btn,
 .pager li > a,
 .pager li > span {
@@ -37,7 +37,8 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 10px 0;
+  font-weight: 600;
 }
 p a,
 li a {
@@ -49,24 +50,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 700;
 }
 a {
-  color: #404040;
+  color: #868e96;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #adb5bd;
 }
 a img:hover,
 a img:focus {
   cursor: zoom-in;
-}
-hr.small {
-  max-width: 100px;
-  margin: 15px auto;
-  border-width: 4px;
-  border-color: #fff;
 }
 .fa-stack-1x,
 .fa-stack-2x {
@@ -80,12 +75,13 @@ hr.small {
   z-index: 3;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 .navbar-custom .nav li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -139,14 +135,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #5c7cfa;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #5c7cfa;
   }
   .navbar-custom.is-visible {
 /* if the user changes the scrolling direction, we show the header */
@@ -158,10 +154,10 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #808080;
+  background-color: #5c7cfa;
   background-position: center center;
   background-attachment: scroll;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -179,7 +175,7 @@ hr.small {
 .intro-header .site-heading.archives,
 .intro-header .post-heading.archives,
 .intro-header .page-heading.archives {
-  color: #0085a1;
+  color: #5c7cfa;
   margin-top: 60px;
 }
 .intro-header .site-heading,
@@ -188,8 +184,9 @@ hr.small {
 }
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
+  padding: 9.5px 0;
   margin-top: 0;
-  font-size: 50px;
+  font-size: 30px;
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
@@ -202,11 +199,15 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 40px;
   }
 }
+.intro-header .post-heading {
+  text-align: center;
+}
 .intro-header .post-heading h1 {
-  font-size: 35px;
+  font-size: 30px;
+  margin-top: 0;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
@@ -219,16 +220,16 @@ hr.small {
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-style: italic;
-  font-weight: 300;
-  font-size: 20px;
+  display: absolute;
+  font-weight: 500;
+  font-size: 15px;
 }
 .intro-header .post-heading .meta a {
   color: #fff;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
-    font-size: 55px;
+    font-size: 40px;
   }
   .intro-header .post-heading .subheading {
     font-size: 30px;
@@ -240,10 +241,10 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #5c7cfa;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -256,9 +257,8 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
+  color: #b3b3b3;
+  font-size: 15px;
   margin-top: 0;
 }
 .post-preview > .post-meta.archive {
@@ -270,12 +270,12 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #5c7cfa;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 .section-heading {
@@ -318,7 +318,10 @@ hr.small {
   height: 30px;
 }
 footer {
-  padding: 50px 0 65px;
+  background: #f1f3f5;
+  border-top: 1px solid #dee2e6;
+  margin-top: 50px;
+  padding: 30px 0;
 }
 footer .list-inline {
   margin: 0;
@@ -374,7 +377,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #5c7cfa;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee;
@@ -382,7 +385,7 @@ form .row:first-child .floating-label-form-group {
 .btn {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
@@ -393,8 +396,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #5c7cfa;
+  border: 1px solid #5c7cfa;
   color: #fff;
 }
 .pager {
@@ -404,7 +407,7 @@ form .row:first-child .floating-label-form-group {
 .pager li > span {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 15px 25px;
   background-color: #fff;
@@ -413,26 +416,26 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: #fff;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #5c7cfa;
+  border: 1px solid #5c7cfa;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #808080;
+  color: #b3b3b3;
   background-color: #404040;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
-  background: #0085a1;
+  background: #5c7cfa;
 }
 ::selection {
   color: #fff;
   text-shadow: none;
-  background: #0085a1;
+  background: #5c7cfa;
 }
 img::selection {
   color: #fff;
@@ -443,5 +446,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #5c7cfa;
 }
