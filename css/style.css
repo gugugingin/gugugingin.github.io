@@ -169,7 +169,7 @@ a img:focus {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 140px 0;
   }
 }
 .intro-header .site-heading.archives,
@@ -203,6 +203,7 @@ a img:focus {
   }
 }
 .intro-header .post-heading {
+  padding: 140px 0 108px;
   text-align: center;
 }
 .intro-header .post-heading h1 {
@@ -226,6 +227,15 @@ a img:focus {
 }
 .intro-header .post-heading .meta a {
   color: #fff;
+}
+.intro-header .post-heading .post-subheading {
+  color: rgba(255,255,255,0.85);
+  margin: 15px 0 30px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.intro-header .post-heading .meta {
+  color: rgba(255,255,255,0.75);
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
